@@ -1,0 +1,28 @@
+group 'com.dnsoft.springinaction'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+//指定Main函数所在类
+mainClassName = "com.dnsoft.springinaction.springcore.AppMain"
+
+repositories {
+    // maven库
+    def cn = "http://maven.aliyun.com/nexus/content/groups/public/"
+    def abroad = "http://central.maven.org/maven2/"
+    // 先从url中下载jar若没有找到，则在artifactUrls中寻找
+    maven {
+        url cn
+        artifactUrls abroad
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //加载Spring单元测试包
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.11.RELEASE'
+    //加载Spring核心相关包
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.11.RELEASE'
+}
