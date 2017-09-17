@@ -10,3 +10,17 @@
 
 # 2.2.3 设置组建扫描的基础包
 
+# 2.2.4 通过为bean添加注解实现自动装配
+
+- 创建MediaPlayer接口
+
+  ```java
+  package soundsystem;
+  public interface MediaPlayer {
+      void play();
+  }
+  ```
+
+- 创建CDPlayer类
+
+- 添加自动装配属性
