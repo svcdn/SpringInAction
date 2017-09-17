@@ -24,3 +24,21 @@
 - 创建CDPlayer类
 
 - 添加自动装配属性
+
+# 2.2.5 验证自动装配
+
+- 引入System Rules库，StandardOutputStreamLog需改为新用法
+
+  ```java
+  public class MyTest {
+  	@Rule
+  	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+
+  	@Test
+  	public void writesTextToSystemOut() {
+  		System.out.print("hello world");
+  		assertEquals("hello world", systemOutRule.getLog());
+  	}
+  }
+  ```
+- ​重写CDPlayerTest测试类
