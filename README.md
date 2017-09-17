@@ -5,3 +5,5 @@
 - 使用JUnit测试Java项目和Spring Java项目
 - 使用Spring配置类
 - 创建Spring配置文件（xml格式）
+
+# 2.2.2 为组建扫描的bean命名
