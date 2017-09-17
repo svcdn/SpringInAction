@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="soundsystem.CDPlayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-09-17T08:49:24" hostname="dongningdeMacBook-Pro.local" time="0.004">
+<testsuite name="soundsystem.CDPlayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-09-17T09:06:28" hostname="dongningdeMacBook-Pro.local" time="0.005">
   <properties/>
-  <testcase name="cdShouldNotBeNull" classname="soundsystem.CDPlayerTest" time="0.004"/>
+  <testcase name="cdShouldNotBeNull" classname="soundsystem.CDPlayerTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[九月 17, 2017 4:49:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+  <system-err><![CDATA[九月 17, 2017 5:06:27 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-九月 17, 2017 4:49:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
-信息: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-九月 17, 2017 4:49:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
-信息: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-九月 17, 2017 4:49:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+九月 17, 2017 5:06:27 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 信息: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-九月 17, 2017 4:49:24 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
-信息: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c3274e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@61a0d6d8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6cba0ba4]
-九月 17, 2017 4:49:24 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
-信息: Refreshing org.springframework.context.support.GenericApplicationContext@250db5ba: startup date [Sun Sep 17 16:49:24 CST 2017]; root of context hierarchy
+九月 17, 2017 5:06:27 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+九月 17, 2017 5:06:27 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+九月 17, 2017 5:06:27 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2188bba2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@22680c6d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@37149b5e]
+九月 17, 2017 5:06:27 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@105235ba: startup date [Sun Sep 17 17:06:27 CST 2017]; root of context hierarchy
 ]]></system-err>
 </testsuite>
