@@ -42,3 +42,9 @@
   }
   ```
 - ​重写CDPlayerTest测试类
+
+# 2.3.1 创建配置类
+
+- 移除CDPlayerConfig的@ComponentScan注解
+- 运行测试看结果
+- 加上移除CDPlayerConfig的@ComponentScan注解
