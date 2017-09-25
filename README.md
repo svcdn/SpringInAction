@@ -48,3 +48,10 @@
 - 移除CDPlayerConfig的@ComponentScan注解
 - 运行测试看结果
 - 加上移除CDPlayerConfig的@ComponentScan注解
+
+# 2.3.2 声明简单的bean
+
+- 移除CDPlayerConfig的@ComponentScan注解
+- 使用@Bean注解
+- 添加@Bean的name
+- 此时还无法通过测试
