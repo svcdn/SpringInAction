@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="soundsystem.CDPlayerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-09-17T10:23:04" hostname="dongningdeMacBook-Pro.local" time="0.012">
+<testsuite name="soundsystem.CDPlayerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-09-25T13:14:32" hostname="dongningdeMacBook-Pro.local" time="0.006">
   <properties/>
-  <testcase name="play" classname="soundsystem.CDPlayerTest" time="0.007"/>
-  <testcase name="cdShouldNotBeNull" classname="soundsystem.CDPlayerTest" time="0.002"/>
+  <testcase name="play" classname="soundsystem.CDPlayerTest" time="0.004"/>
+  <testcase name="cdShouldNotBeNull" classname="soundsystem.CDPlayerTest" time="0.0"/>
   <system-out><![CDATA[Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles
 ]]></system-out>
-  <system-err><![CDATA[九月 17, 2017 6:23:03 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+  <system-err><![CDATA[九月 25, 2017 9:14:31 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-九月 17, 2017 6:23:03 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+九月 25, 2017 9:14:31 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 信息: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-九月 17, 2017 6:23:03 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+九月 25, 2017 9:14:31 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 信息: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-九月 17, 2017 6:23:03 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+九月 25, 2017 9:14:31 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 信息: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-九月 17, 2017 6:23:03 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+九月 25, 2017 9:14:31 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
 信息: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c982776, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2412136b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a16e6dd]
-九月 17, 2017 6:23:04 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
-信息: Refreshing org.springframework.context.support.GenericApplicationContext@47d155bf: startup date [Sun Sep 17 18:23:04 CST 2017]; root of context hierarchy
+九月 25, 2017 9:14:31 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@47d155bf: startup date [Mon Sep 25 21:14:31 CST 2017]; root of context hierarchy
+九月 25, 2017 9:14:32 下午 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor determineCandidateConstructors
+警告: Inconsistent constructor declaration on bean with name 'CDPlayer': single autowire-marked constructor flagged as optional - this constructor is effectively required since there is no default constructor to fall back to: public soundsystem.CDPlayer(soundsystem.CompactDisc)
 ]]></system-err>
 </testsuite>
