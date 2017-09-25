@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.002s</div>
+<div class="counter">0.003s</div>
 <p>duration</p>
 </div>
 </td>
@@ -222,7 +222,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 </tr>
 <tr>
 <td class="failures">play</td>
-<td>0.002s</td>
+<td>0.003s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -230,20 +230,20 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>九月 25, 2017 8:46:46 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+<pre>九月 25, 2017 9:26:53 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-九月 25, 2017 8:46:46 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
-信息: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-九月 25, 2017 8:46:46 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
-信息: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-九月 25, 2017 8:46:46 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+九月 25, 2017 9:26:53 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 信息: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-九月 25, 2017 8:46:46 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
-信息: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@43dad280, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@735f5dee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14d5f48a]
-九月 25, 2017 8:46:46 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
-信息: Refreshing org.springframework.context.support.GenericApplicationContext@28537468: startup date [Mon Sep 25 20:46:46 CST 2017]; root of context hierarchy
-九月 25, 2017 8:46:47 下午 org.springframework.test.context.TestContextManager prepareTestInstance
-严重: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@735f5dee] to prepare test instance [soundsystem.CDPlayerTest@579461ff]
+九月 25, 2017 9:26:53 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+九月 25, 2017 9:26:53 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+九月 25, 2017 9:26:53 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@ce07e25, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5aa5e92e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@fd9aa9f]
+九月 25, 2017 9:26:53 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@64232269: startup date [Mon Sep 25 21:26:53 CST 2017]; root of context hierarchy
+九月 25, 2017 9:26:53 下午 org.springframework.test.context.TestContextManager prepareTestInstance
+严重: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5aa5e92e] to prepare test instance [soundsystem.CDPlayerTest@424195c5]
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'soundsystem.CDPlayerTest': Unsatisfied dependency expressed through field 'player'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'soundsystem.MediaPlayer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
@@ -304,8 +304,8 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
 	... 51 more
 
-九月 25, 2017 8:46:47 下午 org.springframework.test.context.TestContextManager prepareTestInstance
-严重: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@735f5dee] to prepare test instance [soundsystem.CDPlayerTest@31c30565]
+九月 25, 2017 9:26:53 下午 org.springframework.test.context.TestContextManager prepareTestInstance
+严重: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5aa5e92e] to prepare test instance [soundsystem.CDPlayerTest@5438421c]
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'soundsystem.CDPlayerTest': Unsatisfied dependency expressed through field 'player'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'soundsystem.MediaPlayer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
@@ -377,7 +377,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.1</a> at 2017-9-25 20:46:47</p>
+<a href="http://www.gradle.org">Gradle 4.1</a> at 2017-9-25 21:26:54</p>
 </div>
 </div>
 </body>
