@@ -17,8 +17,13 @@ import javax.naming.Name;
 public class CDPlayerConfig {
 
     //使用@Bean注解并添加名称
-    @Bean(name="lonelyHeartClubBand")
+    @Bean//(name="lonelyHeartClubBand")
     public CompactDisc sgtPeppers(){
         return new SgtPeppers();
+    }
+
+    @Bean
+    public CDPlayer cdPlayer(){
+        return new CDPlayer(sgtPeppers());
     }
 }
