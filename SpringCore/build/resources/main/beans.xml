@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -8,6 +9,25 @@
                            http://www.springframework.org/schema/context/spring-context.xsd">
     <!--
     <context:component-scan base-package="soundsystem"/>
-    -->
+
     <bean id="compactDisk" class="soundsystem.SgtPeppers"></bean>
+
+
+    <bean id="compactDisk" class="soundsystem.BlankDisc">
+        <constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band"></constructor-arg>
+        <constructor-arg value="The Beatles"></constructor-arg>
+    </bean>
+    -->
+    <bean id="compactDisk" class="soundsystem.BlankDisc"
+        c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+        c:_1="The Beatles"
+    />
+    
+    <!--
+    <bean id="cdPlayer" class="soundsystem.CDPlayer">
+        <constructor-arg ref="compactDisk"></constructor-arg>
+    </bean>
+    -->
+
+    <bean id="cdPlayer" class="soundsystem.CDPlayer" c:cd-ref="compactDisk"/>
 </beans>

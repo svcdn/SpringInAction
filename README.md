@@ -77,3 +77,13 @@
 # 2.4.2 声明一个简单的<bean>
 
 - 添加带id的bean
+
+# 2.4.3 借助构造器注入初始化bean
+
+- 编写xml注入对象创建bean
+- 注释掉CDPlayerConfig类中的全部代码，用@import引入xml配置文件
+- 测试运行
+- 使用c命名空间重新声明bean并测试运行
+- 创建BlankDisc类
+- 将配置文件里的compactDisc替换为BlankDisc类并测试运行
+- 改用c命名空间重新配置bean并运行
