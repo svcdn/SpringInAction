@@ -62,5 +62,12 @@
 # 2.3.3 借助JavaConfig实现注入
 
 - 添加CDPlayer的Bean
+
 - 移除@Bean的name
+
 - 运行测试看结果
+
+# 2.4.1 创建XML配置规范
+
+- 使用xml模板文件
+- 注释掉现有的component-scan
