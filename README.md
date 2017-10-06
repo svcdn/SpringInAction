@@ -87,3 +87,5 @@
 - 创建BlankDisc类
 - 将配置文件里的compactDisc替换为BlankDisc类并测试运行
 - 改用c命名空间重新配置bean并运行
+- 在BlankDisc里添加音轨描述
+- 在xml配置文件中注入列表的值并测试运行，查看测试报告 

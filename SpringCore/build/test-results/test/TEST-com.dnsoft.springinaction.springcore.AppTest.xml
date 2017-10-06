@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dnsoft.springinaction.springcore.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-09-27T13:28:46" hostname="dongningdeMacBook-Pro.local" time="0.001">
+<testsuite name="com.dnsoft.springinaction.springcore.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-06T14:30:04" hostname="dongningdeMacBook-Pro.local" time="0.0">
   <properties/>
-  <testcase name="runTest" classname="com.dnsoft.springinaction.springcore.AppTest" time="0.001"/>
+  <testcase name="runTest" classname="com.dnsoft.springinaction.springcore.AppTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
