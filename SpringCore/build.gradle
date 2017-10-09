@@ -8,6 +8,11 @@ sourceCompatibility = 1.8
 //指定Main函数所在类
 mainClassName = "com.dnsoft.springinaction.springcore.AppMain"
 
+//解决问题：在idea中使用gradle进行编译，编码gbk错误
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 repositories {
     // maven库
     def cn = "http://maven.aliyun.com/nexus/content/groups/public/"
