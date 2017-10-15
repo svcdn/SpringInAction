@@ -30,4 +30,6 @@ dependencies {
     testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.11.RELEASE'
     //加载Spring核心相关包
     compile group: 'org.springframework', name: 'spring-context', version: '4.3.11.RELEASE'
+    //加载System Rules库
+    testCompile 'com.github.stefanbirkner:system-rules:1.16.0'
 }
