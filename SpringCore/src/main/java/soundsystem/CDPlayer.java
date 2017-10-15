@@ -9,17 +9,20 @@ public class CDPlayer implements MediaPlayer {
 
     private CompactDisc compactDisc;
 
-    /*
+
     @Autowired(required = false)
     public CDPlayer(CompactDisc cd){
-        this.cd = cd;
+        this.compactDisc = cd;
     }
-    */
 
+
+    /*
     @Autowired
     public void setCompactDisc(CompactDisc compactDisc){
         this.compactDisc = compactDisc;
     }
+    */
+
 
     /*
     @Autowired

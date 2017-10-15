@@ -1,14 +1,13 @@
 package soundsystem;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.*;
 
 import javax.naming.Name;
 
 @Configuration
-@ImportResource("classpath:beans.xml")
+//导入CDConfig配置
+//@Import(CDConfig.class)
+//@ImportResource("classpath:beans.xml")
 //设置扫描的基础包
 //@ComponentScan("soundsystem")
 //@ComponentScan(basePackages = "soundsystem")
@@ -30,4 +29,10 @@ public class CDPlayerConfig {
         return new CDPlayer(sgtPeppers());
     }
     */
+
+    @Bean
+    public CDPlayer cdPlayer(CompactDisc compactDisc){
+        return new CDPlayer(compactDisc);
+    }
+
 }
