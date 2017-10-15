@@ -99,7 +99,7 @@
 - xml配置引入util命名空间并创建音轨信息集合
 - 修改xml配置，用p命名空间注入BlankDisc属性，测试运行查看报告
 
-# 2.5.2 在JavaConfig中引用XML配置
+# 2.5.1 在JavaConfig中引用XML配置
 
 - 创建CDConfig类
 - 将CDConfig导入到CDPlayerConfig，修改代码，运行通过测试
