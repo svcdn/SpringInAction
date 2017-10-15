@@ -12,20 +12,7 @@
                            http://www.springframework.org/schema/util
                            http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <util:list id="trackLisk">
-        <value>Sgt. Pepper's Lonely Hearts Club Band</value>
-        <value>With a Little Help from My Friends</value>
-        <value>Lucy in the Sky with Diamonds</value>
-        <value>Getting Better</value>
-        <value>Fixing a Hole</value>
-    </util:list>
 
 
-
-    <bean id="compactDisc" class="soundsystem.BlankDisc"
-          p:artist="The Beatles"
-          p:title="Sgt. Pepper's Lonely Hearts Club Band"
-          p:tracks-ref="trackLisk"/>
-
-
+    <bean id="cdPlayer" class="soundsystem.CDPlayer" c:cd-ref="compactDisc"/>
 </beans>

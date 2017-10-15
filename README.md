@@ -105,3 +105,10 @@
 - 将CDConfig导入到CDPlayerConfig，修改代码，运行通过测试
 - 创建SoundSystemConfig导入CDConfig与CDPlayerConfig，运行通过测试
 - 创建cd-config.xml在SoundSystemConfig导入XML配置，运行通过测试
+
+# 2.5.2 在XML配置中引用JavaConfig
+
+- 修改SoundSystemConfig导入beans.xml，去掉其它导入
+- 修改beans.xml引用cd-config.xml，运行通过测试
+- 修改beans.xml引用CDConfig，运行通过测试
+- 新建cdplayer-config.xml，将其引入beans.xml，运行通过测试

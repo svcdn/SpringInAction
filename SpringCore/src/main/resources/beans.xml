@@ -31,13 +31,7 @@
         </constructor-arg>
     </bean>
     -->
-    <util:list id="trackLisk">
-        <value>Sgt. Pepper's Lonely Hearts Club Band</value>
-        <value>With a Little Help from My Friends</value>
-        <value>Lucy in the Sky with Diamonds</value>
-        <value>Getting Better</value>
-        <value>Fixing a Hole</value>
-    </util:list>
+
 
     <!--
     <bean id="compactDisc" class="soundsystem.BlankDisc">
@@ -55,10 +49,7 @@
     </bean>
     -->
 
-    <bean id="compactDisc" class="soundsystem.BlankDisc"
-          p:artist="The Beatles"
-          p:title="Sgt. Pepper's Lonely Hearts Club Band"
-          p:tracks-ref="trackLisk"/>
+
     <!--
     <bean id="compactDisk" class="soundsystem.BlankDisc"
         c:_0="Sgt. Pepper's Lonely Hearts Club Band"
@@ -75,5 +66,11 @@
         <property name="compactDisc" ref="compactDisc"/>
     </bean>
     -->
-    <bean id="cdPlayer" class="soundsystem.CDPlayer" p:compactDisc-ref="compactDisc"/>
+    <!--
+    <import resource="cd-config.xml"/>
+    -->
+
+    <bean class="soundsystem.CDConfig"/>
+
+    <import resource="cdplayer-config.xml"/>
 </beans>
