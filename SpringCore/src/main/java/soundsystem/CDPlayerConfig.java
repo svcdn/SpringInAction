@@ -30,9 +30,10 @@ public class CDPlayerConfig {
     }
     */
 
+    //改为默认构造函数创建bean
     @Bean
-    public CDPlayer cdPlayer(CompactDisc compactDisc){
-        return new CDPlayer(compactDisc);
+    public CDPlayer cdPlayer(){
+        return new CDPlayer();
     }
 
 }

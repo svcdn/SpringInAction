@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -22,7 +23,9 @@ public class CDPlayerTest {
     @Autowired
     private MediaPlayer player;
 
+    //添加@Qualifier("SP")指定自动绑定的bean
     @Autowired
+    @Qualifier("SP")
     private CompactDisc cd;
 
     @Test

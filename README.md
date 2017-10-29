@@ -124,9 +124,21 @@
 
 # 3.3.1 标示首选的bean
 - 修改CDConfig中的compactDisc函数名为compactDiscSP
+
 - 添加新的Immortals类
+
 - 在CDConfig中添加返回Immortals实例的compactDiscIm函数
+
 - 修改cdplayer-config.xml，去掉cdPlayer的bean的输入参数
+
 - 修改beans.xml添加对CDConfig配置类的引用，去掉对cd-config.xml的引用
+
 - 运行测试，会出现NoUniqueBeanDefinitionException，应为可选bean有多个，不能自动装配
+
 - 修改CDConfig在compactDiscIm函数上添加@Primary，指定首选bean，运行测试，自动装配成功
+
+# 3.3.2 限定自动装配的bean
+- 修改CDConfig类，去掉Primary标示
+- 修改CDConfig在compactDiscSP函数上添加@Qualifier("SP")
+- 修改CDPlayer，去掉带参数构造函数，添加setCompactDisc并用@Qualifier("SP")指定自动绑定的bean
+- 修改CDPlayerConfig，改为默认构造函数创建bean，运行通过测试
