@@ -117,3 +117,7 @@
 - 创建DevelopmentCDConfig类作为开发环境的CD配置类
 - 修改beans.xml，导入DevelopmentCDConfig类和cd-config.xml
 - 修改cd-config.xml，添加profile的定义
+
+# 3.1.2 激活profile
+- 在web.xml中设置profile默认值
+- 在测试环境中设置profile值，分别运行测试“dev”值和“prod”值
