@@ -112,3 +112,8 @@
 - 修改beans.xml引用cd-config.xml，运行通过测试
 - 修改beans.xml引用CDConfig，运行通过测试
 - 新建cdplayer-config.xml，将其引入beans.xml，运行通过测试
+
+# 3.1.1 配置profile bean
+- 创建DevelopmentCDConfig类作为开发环境的CD配置类
+- 修改beans.xml，导入DevelopmentCDConfig类和cd-config.xml
+- 修改cd-config.xml，添加profile的定义

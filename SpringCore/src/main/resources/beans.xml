@@ -66,11 +66,11 @@
         <property name="compactDisc" ref="compactDisc"/>
     </bean>
     -->
-    <!--
-    <import resource="cd-config.xml"/>
-    -->
 
-    <bean class="soundsystem.CDConfig"/>
+    <import resource="cd-config.xml"/>
+
+
+    <bean class="soundsystem.DevelopmentCDConfig"/>
 
     <import resource="cdplayer-config.xml"/>
 </beans>
