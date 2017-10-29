@@ -142,3 +142,8 @@
 - 修改CDConfig在compactDiscSP函数上添加@Qualifier("SP")
 - 修改CDPlayer，去掉带参数构造函数，添加setCompactDisc并用@Qualifier("SP")指定自动绑定的bean
 - 修改CDPlayerConfig，改为默认构造函数创建bean，运行通过测试
+
+# 3.4.1 使用会话和请求作用域
+- 所有的bean是单例模式创建的
+- 可以用使用@Scope注解设置作用域
+- Web应用中可以使用Session和Request作用域
