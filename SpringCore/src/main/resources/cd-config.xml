@@ -10,8 +10,7 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd
                            http://www.springframework.org/schema/util
-                           http://www.springframework.org/schema/util/spring-util.xsd"
-       profile="prod">
+                           http://www.springframework.org/schema/util/spring-util.xsd">
 
     <util:list id="trackLisk">
         <value>Sgt. Pepper's Lonely Hearts Club Band</value>
@@ -23,10 +22,18 @@
 
 
 
+    <!--
     <bean id="compactDisc" class="soundsystem.BlankDisc"
           p:artist="The Beatles"
           p:title="Sgt. Pepper's Lonely Hearts Club Band"
           p:tracks-ref="trackLisk"/>
+    -->
 
+    <bean id="compactDisc" class="soundsystem.BlankDisc"
+          p:artist="${disc.artist}"
+          p:title="${disc.title}"
+          p:tracks-ref="trackLisk"/>
+
+    <context:property-placeholder location="classpath:app.properties"/>
 
 </beans>

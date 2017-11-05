@@ -7,6 +7,8 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -14,7 +16,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=SoundSystemConfig.class)
-
 public class CDPlayerTest {
 
     @Rule
@@ -25,13 +26,13 @@ public class CDPlayerTest {
 
     //添加@Qualifier("SP")指定自动绑定的bean
     @Autowired
-    @Qualifier("SP")
     private CompactDisc cd;
 
     @Test
     public void cdShouldNotBeNull(){
         Assert.assertNotNull("cd对象为空",cd);
     }
+
 
     @Test
     public void play(){

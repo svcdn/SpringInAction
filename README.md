@@ -149,3 +149,26 @@
 - Web应用中可以使用Session和Request作用域
 
 # 3.4.2 在XML中声明作用域代理
+
+# 3.5.1 注入外部的值
+- 修改CDPlayerTest类，去掉@Qualifie注解
+- 修改CDPlayer类，去掉@Qualifie注解
+- 修改cd-config.xml，去掉beans标记中的profile="prod"属性
+- 修改beans.xml，去掉对soundsystem.CDConfig的引用，导入cd-config.xml配置文件，运行测试，查看测试报告
+- 修改cd-config.xml将bean标记改为如下样式
+```xml
+<bean id="compactDisc" class="soundsystem.BlankDisc"
+          p:artist="${disc.artist}"
+          p:title="${disc.title}"
+          p:tracks-ref="trackLisk"/>
+
+<context:property-placeholder
+      location="classpath:app.properties"/>
+```
+- 在main/resource/位置新建文件，命名为app.properties，并添加如下代码
+```properties
+disc.artist=app.properties artist
+disc.title=app.properties title
+```
+- 运行测试，查看测试报告
+- ​
