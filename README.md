@@ -186,5 +186,7 @@ public SgtPeppers(String title,String artist){
     this.artist = artist;
 }
 ```
--      修改CDConfig.java添加@PropertySource("classpath:app.properties")，指定引用的属性文件
--      运行测试，查看测试报告
+- 修改CDConfig.java添加@PropertySource("classpath:app.properties")，指定引用的属性文件
+- 运行测试，查看测试报告
+# 3.5.2 使用Spring表达式语句进行装配
+- 自行测试SpEL表达式
