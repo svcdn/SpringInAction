@@ -25,6 +25,7 @@ public class CDPlayerTest {
     private MediaPlayer player;
 
     //添加@Qualifier("SP")指定自动绑定的bean
+    @Qualifier("SP")
     @Autowired
     private CompactDisc cd;
 

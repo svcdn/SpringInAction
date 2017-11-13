@@ -19,6 +19,7 @@ public class CDPlayer implements MediaPlayer {
     */
     //添加setCompactDisc并用@Qualifier("SP")指定自动绑定的bean
     @Autowired
+    @Qualifier("SP")
     public void setCompactDisc(CompactDisc compactDisc){
         this.compactDisc = compactDisc;
     }

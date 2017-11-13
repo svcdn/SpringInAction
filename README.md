@@ -171,4 +171,20 @@ disc.artist=app.properties artist
 disc.title=app.properties title
 ```
 - 运行测试，查看测试报告
-- ​
+- 修改beans.xml，去掉对cd-config.xml的引用，导入soundsystem.CDConfig配置类
+- 修改CDPlayerTest类，添加@Qualifie注解
+- 修改CDConfig类，添加@Qualifie注解
+- 修改CDPlayer类，添加@Qualifie注解，运行测试，查看测试报告
+- 修改SgtPeppers类，添加一个默认构造函数和一个带参数构造函数，如下：
+```java
+public SgtPeppers(){
+
+}
+
+public SgtPeppers(String title,String artist){
+    this.title = title;
+    this.artist = artist;
+}
+```
+
+- 运行测试，查看测试报告

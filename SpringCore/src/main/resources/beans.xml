@@ -68,16 +68,16 @@
     -->
 
 
-
+    <!--
     <import resource="cd-config.xml"/>
-
+    -->
 
     <!--
     <bean class="soundsystem.DevelopmentCDConfig"/>
     -->
 
-    <!--
+
     <bean class="soundsystem.CDConfig"/>
-    -->
+
     <import resource="cdplayer-config.xml"/>
 </beans>
