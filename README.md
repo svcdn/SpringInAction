@@ -186,5 +186,5 @@ public SgtPeppers(String title,String artist){
     this.artist = artist;
 }
 ```
-
-- 运行测试，查看测试报告
+-      修改CDConfig.java添加@PropertySource("classpath:app.properties")，指定引用的属性文件
+-      运行测试，查看测试报告
